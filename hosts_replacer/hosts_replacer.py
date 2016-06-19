@@ -6,11 +6,11 @@ import getpass
 @click.option('--backup', '-b', is_flag=True, help='copy hosts file to new_file')
 @click.option('--hosts_path', '-p', default='/etc/hosts', help='if /etc/hosts does not exist, please set hosts path')
 @click.argument('new_file')
-def replace(backup, hosts_path, new_hosts_file):
+def replace(backup, hosts_path, new_file):
     # パスワードの入力
     passwd = (getpass.getpass() + '\n').encode()
 
-    src = new_hosts_file
+    src = new_file
     dst = hosts_path
 
     if backup:
