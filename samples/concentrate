@@ -10,11 +10,15 @@
 255.255.255.255 broadcasthost
 ::1             localhost
 
-# SNS
-127.0.0.1       facebook.com
-127.0.0.1       twitter.com
-
 # Movie
-127.0.0.1       youtube.com
-127.0.0.1       nicovideo.jp
-127.0.0.1       radiko.jp
+0.0.0.0         www.youtube.com, i.ytimg.com, s.ytimg.com
+0.0.0.0         www.nicovideo.jp, news.nicovideo.jp
+0.0.0.0         radiko.jp
+
+# News
+0.0.0.0         www.nikkansports.com
+
+# SNS
+0.0.0.0         facebook.com
+0.0.0.0         twitter.com
+0.0.0.0         pixiv.net
